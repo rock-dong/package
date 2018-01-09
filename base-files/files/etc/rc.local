@@ -1,4 +1,7 @@
 # Put your custom commands here that should be executed once
 # the system init finished. By default this file does nothing.
 
+echo 1000 > /sys/class/leds/led1/interval
+echo 1 > /sys/class/leds/led1/blink
+
 exit 0
