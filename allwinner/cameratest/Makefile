@@ -77,6 +77,8 @@ endef
 # directory) to the install directory.
 define Package/cameratest/install
 	$(INSTALL_DIR) $(1)/usr/bin/
+	$(INSTALL_DIR) $(1)/usr/lib
+	$(INSTALL_DATA) $(STAGING_DIR)/usr/lib/libjpeg.so.9 $(1)/usr/lib/
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/cameratest $(1)/usr/bin/
 endef
 

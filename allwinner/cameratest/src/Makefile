@@ -1,6 +1,6 @@
 TARGET			=	cameratest
 INCLUDES		+=	-I$(STAGING_DIR)/usr/include/allwinner/include -I$(STAGING_DIR)/usr/include/allwinner
-LIBS			+=  -lpthread -ldl -lrt \
+LIBS			+=  -lpthread -ldl -lrt -ljpeg\
 
 SRCS	= cameratest.c common.c fifo.c camera_detect.c camera_capture.c
 OBJS	= $(SRCS:.c=.o)
